@@ -2,6 +2,10 @@
 
 int main()
 {
-	printf("THIS IS FROM example2.c FILE");
+	#ifdef PRINT
+		#if PRINT == y
+			printf("THIS IS FROM EXAMPLE2.c FILE");
+		#endif
+	#endif
 	return 0;
 }
